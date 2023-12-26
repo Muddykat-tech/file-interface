@@ -7,6 +7,7 @@ export interface DropboxInterfaceConfig {
 
 export interface DBInterfaceConfig {
     dbURL: string;
+    uuid: string;
 }
 
 export interface FileIdentifier {
