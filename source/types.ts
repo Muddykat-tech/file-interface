@@ -5,6 +5,10 @@ export interface DropboxInterfaceConfig {
     dropboxClient: any;
 }
 
+export interface DBInterfaceConfig {
+    dbURL: string;
+}
+
 export interface FileIdentifier {
     identifier: Identifier | null;
     name: string;
