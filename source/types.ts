@@ -1,5 +1,6 @@
 import type { GoogleDriveClient } from "@buttercup/googledrive-client";
 import type { WebDAVClient } from "webdav";
+import type { ButtercupServerClient } from "buttercup-server-client";
 
 export interface DropboxInterfaceConfig {
     dropboxClient: any;
@@ -8,6 +9,7 @@ export interface DropboxInterfaceConfig {
 export interface DBInterfaceConfig {
     dbURL: string;
     uuid: string;
+    buttercupServerClient: ButtercupServerClient;
 }
 
 export interface FileIdentifier {
