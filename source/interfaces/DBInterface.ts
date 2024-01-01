@@ -25,16 +25,35 @@ export class DBInterface extends FileSystemInterface {
         return this.buttercupServerClient.getFileContents(fileIdentifier);
     }
 
-    putFileContents(
+    // putFileContents(
+    //     parentPathIdentifier: PathIdentifier,
+    //     fileIdentifier: FileIdentifier,
+    //     encryptedData: string
+    // ): Promise<FileIdentifier> {
+    //     return this.buttercupServerClient
+    //         .putFileContents(fileIdentifier.name, encryptedData)
+    //         .then(resolvedString => ({
+    //             identifier: "encryptedData",
+    //             name: resolvedString
+    //         }));
+    // }
+
+    async putFileContents(
         parentPathIdentifier: PathIdentifier,
         fileIdentifier: FileIdentifier,
-        encryptedData: string
+        data: string
     ): Promise<FileIdentifier> {
-        return this.buttercupServerClient
-            .putFileContents(fileIdentifier.name, encryptedData)
-            .then(resolvedString => ({
-                identifier: "encryptedData",
-                name: resolvedString
-            }));
+        let jsonData: string;
+        jsonData = await this.buttercupServerClient.putFileContents(
+            fileIdentifier.identifier as string,
+            data
+        );
+
+        let fileInfo = JSON.parse(jsonData);
+
+        return {
+            identifier: fileInfo.vaultName,
+            name: fileInfo.vaultData
+        };
     }
 }
