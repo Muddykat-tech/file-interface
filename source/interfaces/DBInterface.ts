@@ -30,6 +30,11 @@ export class DBInterface extends FileSystemInterface {
         fileIdentifier: FileIdentifier,
         encryptedData: string
     ): Promise<FileIdentifier> {
-        return this.buttercupServerClient.putFileContents(fileIdentifier.name, encryptedData);
+        return this.buttercupServerClient
+            .putFileContents(fileIdentifier.name, encryptedData)
+            .then(resolvedString => ({
+                identifier: "encryptedData",
+                name: resolvedString
+            }));
     }
 }
