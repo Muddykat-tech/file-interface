@@ -1,5 +1,5 @@
 {
-  "name": "@buttercup/file-interface",
+  "name": "@muddykat-tech/file-interface",
   "version": "3.0.1",
   "description": "Client request library interface and explorer",
   "exports": "./dist/index.js",
