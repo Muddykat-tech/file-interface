@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buttercup/file-interface.git"
+    "url": "git+https://github.com/muddykat-tech/file-interface.git"
   },
   "publishConfig": {
     "access": "public"
@@ -45,11 +45,11 @@
   "author": "Perry Mitchell <perry@perrymitchell.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/buttercup/file-interface/issues"
+    "url": "https://github.com/muddykat-tech/file-interface/issues"
   },
-  "homepage": "https://github.com/buttercup/file-interface#readme",
+  "homepage": "https://github.com/muddykat-tech/file-interface#readme",
   "dependencies": {
-    "buttercup-server-client": "file:../buttercup-server/buttercup-server-client/buttercup-server-client-1.0.0.tgz",
+    "@amalsaju/buttercup-server-client": "^1.0.2",
     "join-path": "^1.1.1",
     "layerr": "^2.0.0"
   },
