@@ -2,7 +2,7 @@ import joinPath from "join-path";
 import https from "https";
 import { FileSystemInterface } from "../FileSystemInterface.js";
 import { FileIdentifier, FileItem, PathIdentifier, DBInterfaceConfig } from "../types.js";
-import { ButtercupServerClient } from "buttercup-server-client";
+import { ButtercupServerClient } from "@amalsaju/buttercup-server-client";
 const axios = require("axios");
 
 export class DBInterface extends FileSystemInterface {
