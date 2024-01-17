@@ -49,7 +49,8 @@
   },
   "homepage": "https://github.com/buttercup/file-interface#readme",
   "dependencies": {
-    "buttercup-server-client": "file:../buttercup-server/buttercup-server-client/buttercup-server-client-1.0.0.tgz",
+    "@amalsaju/buttercup-server-client": "^1.0.1",
+    "@buttercup/file-interface": "file:buttercup-file-interface-3.0.1.tgz",
     "join-path": "^1.1.1",
     "layerr": "^2.0.0"
   },
