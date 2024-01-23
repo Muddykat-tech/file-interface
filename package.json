@@ -1,6 +1,6 @@
 {
   "name": "@muddykat-tech/file-interface",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Client request library interface and explorer",
   "exports": "./dist/index.js",
   "react-native": "./dist/index.js",
@@ -30,7 +30,11 @@
   },
   "repository": {
     "type": "git",
+<<<<<<< Updated upstream
     "url": "git+https://github.com/muddykat-tech/file-interface.git"
+=======
+    "url": "git+https://github.com/Muddykat-tech/file-interface.git"
+>>>>>>> Stashed changes
   },
   "publishConfig": {
     "access": "public"
@@ -45,11 +49,19 @@
   "author": "Perry Mitchell <perry@perrymitchell.net>",
   "license": "MIT",
   "bugs": {
+<<<<<<< Updated upstream
     "url": "https://github.com/muddykat-tech/file-interface/issues"
   },
   "homepage": "https://github.com/muddykat-tech/file-interface#readme",
   "dependencies": {
     "@amalsaju/buttercup-server-client": "^1.0.2",
+=======
+    "url": "https://github.com/Muddykat-tech/file-interface/issues"
+  },
+  "homepage": "https://github.com/Muddykat-tech/file-interface#readme",
+  "dependencies": {
+    "@amalsaju/buttercup-server-client": "1.0.3",
+>>>>>>> Stashed changes
     "join-path": "^1.1.1",
     "layerr": "^2.0.0"
   },
