@@ -1,7 +1,7 @@
 # File Interface
 > Client request library interface and explorer
 
-![build status](https://github.com/buttercup/file-interface/actions/workflows/test.yml/badge.svg) [![npm version](https://badge.fury.io/js/%40buttercup%2Ffile-interface.svg)](https://www.npmjs.com/package/@buttercup/file-interface)
+![build status](https://github.com/buttercup/file-interface/actions/workflows/test.yml/badge.svg) [![npm version](https://badge.fury.io/js/%40muddykat-tech%2Ffile-interface.svg)](https://www.npmjs.com/package/@muddykat-tech/file-interface)
 
 ## About
 
