@@ -1,6 +1,6 @@
 {
   "name": "@muddykat-tech/file-interface",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "description": "Client request library interface and explorer",
   "exports": "./dist/index.js",
   "react-native": "./dist/index.js",
@@ -49,13 +49,15 @@
   },
   "homepage": "https://github.com/Muddykat-tech/file-interface#readme",
   "dependencies": {
-    "@amalsaju/buttercup-server-client": "1.0.3",
     "join-path": "^1.1.1",
-    "layerr": "^2.0.0"
+    "layerr": "^2.0.0",
+    "string-width-cjs": "^5.1.1",
+    "strip-ansi-cjs": "^8.0.0"
   },
   "devDependencies": {
     "@buttercup/dropbox-client": "^2.1.0",
     "@buttercup/googledrive-client": "^2.2.0",
+    "@muddykat-tech/buttercup-server-client": "^1.0.4",
     "@types/node": "^18.15.11",
     "chai": "^4.3.7",
     "directory-exists": "^2.0.1",
@@ -71,5 +73,9 @@
     "sinon": "^15.0.3",
     "typescript": "^5.0.4",
     "webdav": "^5.0.0-r3"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   }
 }
